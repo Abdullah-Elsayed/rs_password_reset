@@ -1,22 +1,52 @@
-# -*- coding: utf-8 -*-
 {
-    'name': "Password Reset",
+    'name': "Password Strength Meter and Reset by Link",
 
     'summary': """
-        Password Reset by link via copy paste
+        This module provides a password strength meter and allows users to reset their passwords by copying and pasting a link.
     """,
 
     'description': """
-        This module allows users to reset their passwords by copying and pasting a link.
-        password strength, password reset link, user authentication, account security, user management, password recovery
+Password Strength Meter and Reset by Link
+==============================================
+This Odoo module enhances the password reset process by providing a real-time password strength meter and allowing users to reset their passwords via a copy-paste link. It ensures that users create strong passwords by giving visual feedback and enforcing password requirements.
+Features:
+---------
+* Real-time password strength meter
+* Visual feedback with color-coded indicators
+* Interactive requirements checklist
+* Password match validation
+* Prevents submission of weak passwords
+* User-friendly interface
+* Reset password via copy-paste link
+* No email sending required for password reset
+* Secure password reset process
+
+Password Requirements:
+----------------------
+* Minimum 8 characters
+* At least one uppercase letter
+* At least one lowercase letter
+* At least one digit
+* At least one special character
+Installation:
+-------------
+1. Download the module and place it in your Odoo addons directory.
+2. Update the apps list in Odoo.
+3. Install the "Password Strength Meter and Reset by Link" module.
+Usage:
+------
+1. Navigate to the password reset page.
+2. Enter your new password and observe the strength meter.
+3. Copy the generated reset link and paste it into your browser to reset your password. 
+
+        
     """,
 
     'author': "Abdullah El-sayed",
-    'license': 'LGPL-3',
+    'website': "abdullahelsaayed@outlook.com",
     'category': 'Tools',
     'version': '0.1',
 
-    # any module necessary for this one to work correctly
     'depends': ['base', 'web', 'auth_signup'],
 
     # always loaded
@@ -34,5 +64,23 @@
             'rs_password_reset/static/src/css/password_strength.css',
         ],
     },
+
+    'images': [
+        'static/description/icon.png',
+        'static/description/screenshots/screenshot1.png',
+        'static/description/screenshots/screenshot2.png',
+        'static/description/screenshots/screenshot3.png',
+        'static/description/screenshots/screenshot4.png',
+        'static/description/screenshots/screenshot5.png',
+        'static/description/screenshots/screenshot6.png',
+
+    ],
+
     'installable': True,
+    'application': False,
+    'auto_install': False,
+    'license': 'LGPL-3',
+
+    'price': 0.0,
+    'currency': 'USD',
 }
