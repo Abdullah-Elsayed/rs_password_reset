@@ -67,12 +67,12 @@ Usage:
 
     'images': [
         'static/description/icon.png',
-        'static/description/screenshots/screenshot1.png',
-        'static/description/screenshots/screenshot2.png',
-        'static/description/screenshots/screenshot3.png',
-        'static/description/screenshots/screenshot4.png',
-        'static/description/screenshots/screenshot5.png',
-        'static/description/screenshots/screenshot6.png',
+        'static/description/Screenshots/screenshot1.png',
+        'static/description/Screenshots/screenshot2.png',
+        'static/description/Screenshots/screenshot3.png',
+        'static/description/Screenshots/screenshot4.png',
+        'static/description/Screenshots/screenshot5.png',
+        'static/description/Screenshots/screenshot6.png',
 
     ],
 
